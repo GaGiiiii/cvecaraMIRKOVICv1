@@ -130,6 +130,12 @@ a:hover {
   }
 }
 
+@media screen and (max-width: 410px) {
+  .logo img{
+    margin-top: 0;
+  }
+}
+
 /* ********************** OUR TEAM ************************ */
 
 .our-team {
@@ -309,7 +315,6 @@ hr.hr{
     margin-top: 0;
   }
 }
-
 
 /* ********************** FOOTER ************************ */
 

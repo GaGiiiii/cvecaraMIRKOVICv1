@@ -129,6 +129,14 @@ a:hover {
   }
 }
 
+@media screen and (max-width: 410px) {
+  .logo img{
+    margin-top: 0;
+  }
+}
+
+/* ********************** SLICK ************************ */
+
 .slick-bolesni{
   height: 830px;
 }
@@ -165,6 +173,18 @@ a:hover {
   background-size: 100% 100%;
   background-position: 50% 50%;
   height: 800px;
+}
+
+@media screen and (max-width: 1350px) {
+  .slick-bolesni p{
+    line-height: 3rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .slick-bolesni{
+    display: none !important;
+  }
 }
 
 /* ********************** OUR TEAM ************************ */
@@ -303,7 +323,6 @@ hr.hr{
   }
 }
 
-
 /* ********************** FOOTER ************************ */
 
 footer {
@@ -338,6 +357,7 @@ i.fa{
   margin-left: 2rem;
 }
 
+/* ********************** MODALS ************************ */
 
 .modal {
   display: none; /* Hidden by default */
@@ -353,7 +373,6 @@ i.fa{
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
-/* Modal Content */
 .modal-content {
   background-color: #fefefe;
   margin: auto;
@@ -362,7 +381,6 @@ i.fa{
   width: 60%;
 }
 
-/* The Close Button */
 .close {
   color: #aaaaaa;
   float: right;
@@ -412,26 +430,8 @@ i.fa{
   /* overflow: scroll; */
 }
 
-@media screen and (max-width: 410px) {
-  .logo img{
-    margin-top: 0;
-  }
-}
-
 @media screen and (max-height: 800px) {
   .modal{
     padding-top: 0;
-  }
-}
-
-@media screen and (max-width: 1350px) {
-  .slick-bolesni p{
-    line-height: 3rem;
-  }
-}
-
-@media screen and (max-width: 1200px) {
-  .slick-bolesni{
-    display: none !important;
   }
 }

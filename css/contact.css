@@ -1,3 +1,5 @@
+/* ********************** GLOBAL ************************ */
+
 *{
   font-family: 'Alegreya', serif;
 }
@@ -5,6 +7,8 @@
 body{
   background-color: #eee;
 }
+
+/* ********************** CONTACT FORM ************************ */
 
 .container {
   width: 80%;
@@ -117,6 +121,8 @@ button:hover{
     font-size: 2rem;
   }
 }
+
+/* ********************** FOOTER ************************ */
 
 footer{
   margin-top: 3rem;
