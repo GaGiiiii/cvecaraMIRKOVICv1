@@ -1,3 +1,5 @@
+/* ********** MODALS ********** */
+
 // https://www.w3schools.com/howto/howto_css_modals.asp
 
 for(let i = 1; i <= 9; i++){
@@ -34,7 +36,7 @@ for(let i = 1; i <= 9; i++){
   }
 }
 
-// SLICK
+/* ********** SLICK SLIDER ********** */
 
 $('.slick-bolesni').slick({
   dots: true,
@@ -42,4 +44,3 @@ $('.slick-bolesni').slick({
   autoplay: true,
   autoplaySpeed: 2500
 });
-		

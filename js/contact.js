@@ -1,37 +1,10 @@
+/* ********** PROGRESS BAR ********** */
+
 // https://jqueryui.com/progressbar/
 
 $("#progressbar").progressbar({
   value: 0
 });
-
-function validateName(name){
-  if(name === ""){
-    return false;
-  }
-
-  return true;
-}
-
-function validateEmail(email) {
-  var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-  return re.test(String(email).toLowerCase());
-}
-
-function validateMessage(message){
-  if(message === ""){
-    return false;
-  }
-  
-  return true;
-}
-
-function validateMessage2(message){
-  if(message.length < 20){
-    return false;
-  }
-  
-  return true;
-}
 
 function updateProgressBar(){
   let numberOfValidatedFieldsLET = numberOfValidatedFields();
@@ -65,6 +38,39 @@ function updateProgressBar(){
   }
 }
 
+/* ********** VALIDATION OF INPUTS ********** */
+
+function validateName(name){
+  if(name === ""){
+    return false;
+  }
+
+  return true;
+}
+
+function validateEmail(email) {
+  var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  return re.test(String(email).toLowerCase());
+}
+
+function validateMessage(message){
+  if(message === ""){
+    return false;
+  }
+  
+  return true;
+}
+
+function validateMessage2(message){
+  if(message.length < 20){
+    return false;
+  }
+  
+  return true;
+}
+
+/* ********** NUMBER OF VALIDATED INPUTS FOR PROGRESS BAR ********** */
+
 function numberOfValidatedFields(){
   let name = document.querySelector("#name").value;
   let email = document.querySelector("#email").value;
@@ -86,6 +92,8 @@ function numberOfValidatedFields(){
 
   return counter;
 }
+
+/* ********** VALIDATE FORM ON SUBMIT ********** */
 
 function validateForm() {
   
@@ -137,6 +145,8 @@ function validateForm() {
     return true;
 }
 
+/* ********** GETTING TODAYS DATE ********** */
+
 // https://stackoverflow.com/questions/12409299/how-to-get-current-formatted-date-dd-mm-yyyy-in-javascript-and-append-it-to-an-i/19079425
 
 function getTodaysDate(){
@@ -159,6 +169,12 @@ function getTodaysDate(){
   return today;
 }
 
+let date = getTodaysDate();
+
+let pdate = document.querySelector(".date small");
+pdate.innerHTML = date;
+
+/* ********** BORDERS ********** */
 
 let nameInput = document.querySelector("#name");
 let emailInput = document.querySelector("#email");
@@ -214,11 +230,3 @@ window.addEventListener("click", (event) => {
 messageInput.addEventListener("keyup", () => {
   updateProgressBar();
 });
-
-// DATE
-
-let date = getTodaysDate();
-
-let pdate = document.querySelector(".date small");
-pdate.innerHTML = date;
-
