@@ -423,3 +423,15 @@ i.fa{
     padding-top: 0;
   }
 }
+
+@media screen and (max-width: 1350px) {
+  .slick-bolesni p{
+    line-height: 3rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .slick-bolesni{
+    display: none !important;
+  }
+}
