@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css?family=Alegreya:400,700,700i,900,900i&display=swap&subset=cyrillic,cyrillic-ext');
+
+body {
+  background-color: #000;
+  font-family: 'Alegreya', serif !important;
+}
+
+#landing-header {
+  z-index: 1;
+  position: relative;
+  text-align: center;
+  padding-top: 35vh;
+}
+
+#landing-header h1 {
+  color: #fff;
+  font-size: 5rem;
+  margin-bottom: 0;
+}
+
+.slideshow { 
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.slideshow li { 
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  opacity: 0;
+  z-index: 0;
+  animation: imageAnimation 20s linear infinite; 
+}
+
+.slideshow li:nth-child(1) { 
+  background-image: url("../images/1.jpg");
+  /* background-position: 50% 30% !important; */
+}
+.slideshow li:nth-child(2) { 
+  background-image: url("../images/2.jpg"); 
+  animation-delay: 4s; 
+}
+.slideshow li:nth-child(3) { 
+  background-image: url("../images/3.jpg");
+  animation-delay: 8s;
+  background-position: 50% 65% !important; 
+}
+.slideshow li:nth-child(4) { 
+  background-image: url("../images/4.jpg");
+  animation-delay: 12s; 
+  /* background-position: 70% 20% !important; */
+}
+.slideshow li:nth-child(5) { 
+  background-image: url("../images/5.jpg");
+  animation-delay: 16s; 
+}
+
+@keyframes imageAnimation { 
+  0% { 
+    opacity: 0; 
+    animation-timing-function: ease-in;
+  }
+  10% {
+    opacity: 1;
+    animation-timing-function: ease-out;
+  }
+  20% {
+    opacity: 1
+  }
+  30% {
+    opacity: 0
+  }
+}
+
+.button {
+  color: white;
+  padding: 20px 36px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: 'Alegreya', serif !important;
+
+}
+
+a, a:visited, a:before, a:after{
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+.button5 {
+  background-color: transparent;
+  border: 2px solid #555555;
+}
+
+.button5:hover {
+  background-color: rgba(0, 0, 0, .8);
+  color: white;
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 600px) {
+  h1{
+    font-size: 1rem !important;
+  }
+
+  button{
+    font-size: .8rem !important;
+  }
+}
+

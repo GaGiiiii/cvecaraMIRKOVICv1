@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    <!-- MOBILE RESPONSIVE -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- PRICAJ SRPSKI DA TE CEO SVET RAZUME -->
+    <meta charset="UTF-8">
+    <!-- TITLE -->
+    <title>ЦВЕЋАРА "МИРКОВИЋ"</title>
+    <!-- CSS -->
+		<link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- PROGRESS BAR PLUGIN -->
+    <!-- https://jqueryui.com/progressbar/ -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	</head>
+	<body>
+
+    <!-- ============================== HEADER ================================= -->
+
+		<header>
+        <div class="logo">
+          <a href="index.html"><img src="images/logo.png" alt="RIP Slika"></a>
+        </div>
+        <div class="nav">
+          <ul>
+            <li class=""><a href="about.html">О Нама</a></li>
+            <li class=""><a href="portfolio.html">Понуда</a></li>
+            <li class=""><a href="blog.html">Блог</a></li>
+            <li class=""><a href="contact.html" class="active">Контакт</a></li>
+          </ul>
+        </div>
+      </header>
+
+      <section class="contact-form">
+        <h1 class="h1-contact">КОНТАКТИРАЈТЕ НАС</h1>
+        <p class="date"><strong>Датум</strong>: <small></small></p>
+          <div class="container">
+              <form onsubmit="return validateForm()">
+                <ul class="flex-outer">
+                  <li>
+                    <label for="first-name">ИМЕ</label>
+                    <input type="text" id="name" placeholder="Унесите име">
+                  </li>
+                  <li>
+                    <label for="email">Е-МАИЛ</label>
+                    <input type="email" id="email" placeholder="Унесите е-маил">
+                  </li>
+                  <li>
+                    <label for="message">ПОРУКА (Бар <strong>20</strong> карактера)</label>
+                    <textarea rows="6" id="message" placeholder="Унесите поруку"></textarea>
+                  </li>
+                  <li>
+                    <p>Године (није обавезно)</p>
+                    <ul class="flex-inner">
+                      <li>
+                        <input type="radio" value="20-29" name="radio-age" id="twenty-to-twentynine">
+                        <label for="twenty-to-twentynine">20-29</label>
+                      </li>
+                      <li>
+                        <input type="radio" value="30-39" name="radio-age" id="thirty-to-thirtynine">
+                        <label for="thirty-to-thirtynine">30-39</label>
+                      </li>
+                      <li>
+                        <input type="radio" value="40-49" name="radio-age" id="fourty-to-fourtynine">
+                        <label for="fourty-to-fourtynine">40-49</label>
+                      </li>
+                      <li>
+                        <input type="radio" value="50-59" name="radio-age" id="fifty-to-fiftynine">
+                        <label for="fifty-to-fiftynine">50-59</label>
+                      </li>
+                      <li>
+                        <input type="radio" value="60-69" name="radio-age" id="sixty-to-sixtynine">
+                        <label for="sixty-to-sixtynine">60-69</label>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <div id="progressbar"></div>
+
+                  <li>
+                    <button type="submit">Submit</button>
+                  </li>
+                </ul>
+              </form>
+            </div>
+      </section>
+
+    <!-- ============================== FOOTER ================================= -->
+  
+    <footer>
+        <p>
+          Цвећара „Мирковић“ <span id="copyright-year"> &copy; 2019 </span> &nbsp;|&nbsp; Website Designed by <strong><a href="#">DDV</a></strong>. <br>
+          <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>        
+        </p> 
+      </footer>
+
+    <script src="js/contact.js"></script>
+  
+	</body>
+</html>

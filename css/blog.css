@@ -1,0 +1,425 @@
+/* ********************** IMPORTS ************************ */
+
+@import url('https://fonts.googleapis.com/css?family=Alegreya:400,700,700i,900,900i&display=swap&subset=cyrillic,cyrillic-ext');
+
+/* ********************** GLOBAL ************************ */
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Alegreya', serif;
+}
+
+body {
+    color: #7a7a7a;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+img {
+	max-width: 100%;
+}
+
+header{
+  background-color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #1a1a1a;
+    font-weight: normal;
+}
+
+h2 {
+    padding-top: 66px;
+    color: #5f604b;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 30px;
+    margin-bottom: 56px;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+	outline: none;
+	transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	-webkit-transition: 0.5s ease;
+}
+
+a:hover {
+	color: #ce9f56;
+}
+
+/* ********************** NAVBAR ************************ */
+
+.logo{
+  text-align: center;
+  background-image: url("../images/headerBG.jpg");
+  /* background-image: url("https://www.stockvault.net/data/2018/07/31/253524/preview16.jpg"); */
+  /* background-image: url("https://freerangestock.com/sample/115225/flower-background--light-cream-floral.jpg"); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0% 65%;
+  height: 400px;
+}
+
+.logo img{
+  display: inline-block;
+  margin-top: 7rem;
+}
+.nav{
+  height: 60px;
+}
+
+.nav ul {
+  list-style: none;
+  background-color: #f3f2e9;
+  color: #000;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+.nav li {
+  font-size: 1.2em;
+  line-height: 40px;
+  height: 40px;
+  border-bottom: 1px solid #888;
+  margin-top: 5px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #000;
+  display: block;
+  transition: .3s background-color;
+}
+
+.nav a:hover {
+  background-color: #c4c095;
+}
+
+.nav a.active {
+  background-color: #c4c095;
+  color: #000;
+  cursor: default;
+}
+
+@media screen and (min-width: 600px) {
+  .nav li {
+    width: 120px;
+    border-bottom: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+  }
+
+  .nav li {
+    display: inline-block;
+    margin-right: -4px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .nav{
+    height: 180px;
+  }
+}
+
+.slick-bolesni{
+  height: 830px;
+}
+
+.slick-bolesni p{
+  color: #fff;
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 1rem;
+  /* margin-top: 300px; */
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.image1S{
+  background-image: url("../images/slider3.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: 50% 50%;
+  height: 800px;
+}
+
+.image2S{
+  background-image: url("../images/slider2.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: 50% 50%;
+  height: 800px;
+}
+
+.image3S{
+  background-image: url("../images/slider1.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: 50% 50%;
+  height: 800px;
+}
+
+/* ********************** OUR TEAM ************************ */
+
+.our-team {
+    padding-bottom: 8rem;
+    /* background-color: #f3f2e9; */
+}
+
+.our-team h3 {
+    padding-top: 63px;
+}
+
+.our-team .col1 {
+    color: #adab86;
+}
+
+.wrap{
+  margin: 0 auto;
+  width:100%;
+  display:flex;
+  align-items:space-around;
+  justify-content: space-between;
+  max-width:1200px;
+  flex-wrap: wrap;
+}
+
+.wrap .title{
+  margin-top: 4rem;
+}
+
+.title{
+  width:340px;
+  height:550px;
+  margin:10px;
+  /* background-color:#99aeff; */
+  display:inline-block;
+  background-size:cover;
+  position:relative;
+  /* cursor:pointer; */
+  transition: all 0.4s ease-out;
+  box-shadow: 0px 40px 77px -17px rgba(0,0,0,0.9);
+  overflow:hidden;
+  color:#000;
+  text-align: center;
+}
+
+div.img{
+  height: 210px;
+}
+
+.title img{
+  height:100%;
+  width:100%;
+  z-index:0;
+  transition: all 0.4s ease-out;
+}
+
+.title .text{
+  /* position:absolute; */
+  padding:30px;
+  padding-top: 20px;
+  /* height:calc(100% - 60px); */
+  color: #000;
+}
+
+.title h1{
+  font-weight:300;
+  text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+  margin-bottom: 1rem;
+}
+
+.title h2{
+  font-weight:100;
+  margin:20px 0 0 0;
+  font-style:italic;
+  transform: translateX(200px);
+}
+
+.team h1.team-title{
+  text-align: center;
+  padding-top: 4rem;
+  padding-bottom: 3rem;
+  font-size: 3.5rem;
+}
+
+hr.hr{
+  width: 60%; 
+  margin: 0 20% 0 20%;
+}
+
+.employee-name{
+  padding-top: 0;
+}
+
+.employee-name3{
+  color: #fff;
+  padding-top: 0;
+  margin-left: -1rem !important;
+  margin-top: -1rem !important;
+}
+
+@media (max-width: 1300px) {
+  .team h1.team-title{
+    font-size:3rem !important;
+  }
+}
+
+@media (max-width: 1200px) {
+  .wrap {
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 1080px) {
+  .team h1.team-title{
+    font-size:2.5rem !important;
+  }
+}
+
+@media (max-width: 1000px) {
+  .wrap {
+    flex-direction: column;
+    width:400px;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+
+  .title{
+    max-width: 100%;
+    width: auto;
+  }
+
+  h1.team-title{
+    line-height: 3rem;
+  }
+}
+
+
+/* ********************** FOOTER ************************ */
+
+footer {
+    text-align: center;
+    color: #aea9a9;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+    background-color: #f3f2e9;
+    border-top: 1px solid #000;
+
+    background-image: url("../images/footerBG.jpg");
+    /* background-image: url("https://freerangestock.com/sample/115275/flower-background-vintage-look.jpg"); */
+    /* background-image: url("https://freerangestock.com/sample/115225/flower-background--light-cream-floral.jpg"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0% 80%;
+    height: 150px;
+}
+
+footer p{
+  margin-top: 2rem;
+}
+
+i.fa{
+  font-size: 2rem;
+  margin-left: .5rem;
+  position: relative;
+  top: 1rem;
+}
+
+.fa-facebook{
+  margin-left: 2rem;
+}
+
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 60%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.title .text a{
+  cursor: pointer;
+	color: #ce9f56;
+}
+
+.title .text a:hover{
+  color: #000;
+}
+
+.modal-content{
+  text-align: center;
+}
+
+.modal .image{
+  /* height: 500px; */
+  width: 100%;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.modal .image img{
+  width: 70%;
+  max-height: 500px;
+  border-radius: 5%;
+}
+
+.modal{
+  transition: 2s;
+}
+
+.modal-content p{
+  /* overflow: scroll; */
+}
+
+@media screen and (max-width: 410px) {
+  .logo img{
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-height: 800px) {
+  .modal{
+    padding-top: 0;
+  }
+}

@@ -1,0 +1,138 @@
+*{
+  font-family: 'Alegreya', serif;
+}
+
+body{
+  background-color: #eee;
+}
+
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container * {
+  box-sizing: border-box;
+}
+
+.flex-outer,
+.flex-inner {
+  list-style-type: none;
+  padding: 0;
+}
+
+.flex-outer {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.flex-outer li,
+.flex-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.flex-inner {
+  padding: 0 8px;
+  justify-content: space-between;  
+}
+
+.flex-outer > li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.flex-outer li label,
+.flex-outer li p {
+  padding: 8px;
+  font-weight: 300;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+}
+
+.flex-outer > li > label,
+.flex-outer li p {
+  flex: 1 0 120px;
+  max-width: 220px;
+}
+
+.flex-outer > li > label + *,
+.flex-inner {
+  flex: 1 0 220px;
+}
+
+.flex-outer li p {
+  margin: 0;
+}
+
+.flex-outer li input:not([type='checkbox']),
+.flex-outer li textarea {
+  padding: 15px;
+  border: none;
+}
+
+.flex-outer li button {
+  margin-left: auto;
+  padding: 8px 16px;
+  border: none;
+  background: #333;
+  color: #f2f2f2;
+  text-transform: uppercase;
+  letter-spacing: .09em;
+  border-radius: 2px;
+}
+
+.flex-inner li {
+  width: 100px;
+}
+
+.h1-contact{
+  font-size: 3rem;
+  padding-top: 2rem;
+  /* padding-bottom: 2rem; */
+  text-align: center;
+}
+
+button:hover{
+  background-color: #787f8a !important;
+  cursor: pointer;
+}
+
+.date{
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+#progressbar{
+  margin-bottom: 1.5rem;
+}
+
+.ui-progressbar-value{
+  text-align: center;
+}
+
+@media screen and (max-width: 380px) {
+  .h1-contact{
+    font-size: 2rem;
+  }
+}
+
+footer{
+  margin-top: 3rem;
+}
+
+i.fa{
+  font-size: 2rem;
+  margin-left: .5rem;
+  position: relative;
+  top: 1rem;
+}
+
+.fa-facebook{
+  margin-left: 2rem;
+}
+
+section.contact-form{
+  border-top: 1px solid #000;
+}
